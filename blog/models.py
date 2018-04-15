@@ -14,6 +14,11 @@ from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
+from wagtail.images.models import Image, AbstractImage, AbstractRendition
+
+
+
+
 
 class BlogIndexPage(Page):
     intro = RichTextField(blank=True)
@@ -61,7 +66,7 @@ class BlogPage(Page):
         FieldPanel('body'),
         InlinePanel('gallery_images', label="Gallery images"),
     ]
-    
+
 class BlogPageGalleryImage(Orderable):
     page = ParentalKey(BlogPage, on_delete=models.CASCADE, related_name='gallery_images')
     image = models.ForeignKey(
@@ -106,3 +111,6 @@ class BlogCategory(models.Model):
 
     class Meta:
         verbose_name_plural = 'blog categories'
+        
+
+

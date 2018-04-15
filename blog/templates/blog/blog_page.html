@@ -10,14 +10,16 @@
 
     <div class="intro">{{ page.intro }}</div>
 
-    {{ page.body|richtext }}
+   {{ page.body|richtext }}
 
     {% for item in page.gallery_images.all %}
-        <div style="float: left; margin: 10px">
+        <div class="img">
             {% image item.image fill-320x240 %}
             <p>{{ item.caption }}</p>
         </div>
     {% endfor %}
+    
+ 
 
     <p><a href="{{ page.get_parent.url }}">Return to blog</a></p>
 

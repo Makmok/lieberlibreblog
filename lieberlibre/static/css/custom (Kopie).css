@@ -1,9 +1,6 @@
 body {
     background-color: #ffffff;
-/*
-    font-family: courier, courier new, serif;
     font-size: 1.5rem;
-*/
 }
 
 a {
@@ -139,19 +136,6 @@ maincontent table tbody tr td .highlight {
     width: 90rem;
 }
 
-img {
-/*
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-*/
-    max-width:300px;
-    background: #777;
-    float: left; 
-    margin: 15px;
-    box-shadow: 0 15px 10px #777;
-}
 .page-title {
     border-bottom: 1.5px solid #eee;
     width: 85%;
@@ -238,8 +222,6 @@ ul {
   .social-icons-a {
     max-width: 10%;
   }
-
-
 }
 
 @media (min-width: 41.0rem) and (max-width: 80.0rem){

@@ -22,8 +22,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/milligram.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/milligram.css' %}">
+
 
 
         {% block extra_css %}
@@ -32,6 +33,31 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
+		
+	<div class="navbar">
+        <ul>
+            <div>
+                <li>
+                    <a href="https://untermiete.lieberlibre.de"><h3>untermiete.lieberlibre</h3></a>
+                </li>
+                <li>
+                        <em><h6>Reisen, Radio und Gedanken</h6></em>
+                </li>
+            </div>
+        </ul>
+	</div>
+      
+      <!-- Sidebar -->
+    <sidebar>
+        <ul class="static-item">
+                <li><a href="https://untermiete.lieberlibre.de">Home</a></li>
+				<li><a href="untermiete.lieberlibre.de/blog">Blog</a></li>
+                <li><a href="https://untermiete.lieberlibre.de/contact">Contact</a></li>
+        </ul>        
+    </sidebar>
+		
+		
+		
         {% wagtailuserbar %}
 
         {% block content %}{% endblock %}

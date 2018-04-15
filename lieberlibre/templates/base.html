@@ -50,18 +50,20 @@
       <!-- Sidebar -->
     <sidebar>
         <ul class="static-item">
-                <li><a href="https://untermiete.lieberlibre.de">Home</a></li>
-				<li><a href="untermiete.lieberlibre.de/blog">Blog</a></li>
-                <li><a href="https://untermiete.lieberlibre.de/contact">Contact</a></li>
+                <li><a href="https://untermiete.lieberlibre.de">home</a></li>
+				<li><a href="untermiete.lieberlibre.de/blog">blog</a></li>
+                <li><a href="https://untermiete.lieberlibre.de/contact">contact</a></li>
         </ul>        
     </sidebar>
 		
 		
 		
         {% wagtailuserbar %}
-
+<maincontent>
+	<ul class="maincontent">
         {% block content %}{% endblock %}
-
+    </ul>
+</maincontent>
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/lieberlibre.js' %}"></script>
 

@@ -150,7 +150,7 @@ img {
     background: #777;
     float: left; 
     margin: 15px;
-    box-shadow: 0 15px 10px #777;
+    box-shadow: 0 5px 5px #777;
 }
 .page-title {
     border-bottom: 1.5px solid #eee;

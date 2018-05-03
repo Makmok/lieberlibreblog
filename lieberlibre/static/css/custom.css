@@ -6,14 +6,14 @@ body {
 */
 }
 
-a {
-    color: #558ecc;
-    text-decoration: none;
-}
 
 .navbar {
-    margin-bottom: 10px;
+/*
+    margin-bottom: 5px;
+*/
 }
+
+
 
 .navbar ul {
     list-style-type: none;
@@ -31,11 +31,13 @@ a {
 
 .navbar li a {
     display: block;
-    color: #6C7A89;
+    color: #3671af;
     text-align: center;
     text-decoration: none;
 }
-
+.navbar li a:focus, .navbar li a:hover {
+  color: #606c76;
+}
 .navbar li h4 {
     margin: 5%;
 }
@@ -103,6 +105,7 @@ maincontent {
     display: block;
     line-height: 1.6em;
     width: 85%;
+    margin-top: 30px;
 }
 
 maincontent > ol {
@@ -139,17 +142,13 @@ maincontent table tbody tr td .highlight {
 }
 
 img {
-/*
-    z-index: -1;
-    position: absolute;
-    content: "";
-    bottom: 15px;
-*/
+
     max-width:300px;
     background: #777;
     float: left; 
-    margin: 15px;
-    box-shadow: 0 5px 5px #777;
+    margin: 5px;
+    padding: 0.3px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .page-title {
     border-bottom: 1.5px solid #eee;

@@ -33,12 +33,12 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
-		
+<div class='container'>
 	<div class="navbar">
         <ul>
             <div>
                 <li>
-                    <a href="https://untermiete.lieberlibre.de"><h3>untermiete.lieberlibre</h3></a>
+                    <a href="https://untermiete.lieberlibre.de"><h1>untermiete.lieberlibre</h1></a>
                 </li>
                 <li>
                         <em><h6>Reisen, Radio und Gedanken</h6></em>
@@ -46,17 +46,13 @@
             </div>
         </ul>
 	</div>
-
-      <!-- Sidebar -->
-    <sidebar>
-        <ul class="static-item">
-                <li><a href="https://untermiete.lieberlibre.de">home</a></li>
-				<li><a href="https://untermiete.lieberlibre.de/blog">blog</a></li>
-                <li><a href="https://untermiete.lieberlibre.de/contact">contact</a></li>
-        </ul>        
-    </sidebar>
-		
-		
+	<div class="navbar">
+        <ul>
+                <li><a href="https://untermiete.lieberlibre.de"><h2>home</h2></a></li>
+				<li><a href="https://untermiete.lieberlibre.de/blog"><h2>Petitessen</h2></a></li>
+                <li><a href="https://untermiete.lieberlibre.de/contact"><h2>contact</h2></a></li>
+        </ul>
+	</div>
 		
         {% wagtailuserbar %}
 <maincontent>
@@ -70,5 +66,6 @@
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
         {% endblock %}
-    </body>
+        </body>
 </html>
+

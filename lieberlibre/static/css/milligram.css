@@ -444,7 +444,7 @@ input[type='radio'] {
 }
 
 a {
-  color: #9b4dca;
+  color: #3671af;
   text-decoration: none;
 }
 
@@ -559,7 +559,7 @@ h1 {
 h2 {
   font-size: 3.6rem;
   line-height: 1.25;
-}
+  }
 
 h3 {
   font-size: 2.8rem;

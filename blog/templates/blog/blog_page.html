@@ -7,17 +7,17 @@
 {% block content %}
     <h1>{{ page.title }}</h1>
     <p class="meta">{{ page.date }}</p>
-
-    <div class="intro">{{ page.intro }}</div>
-
-   {{ page.body|richtext }}
-
     {% for item in page.gallery_images.all %}
         <div class="img">
             {% image item.image fill-320x240 %}
             <p>{{ item.caption }}</p>
         </div>
     {% endfor %}
+    <div class="intro">{{ page.intro }}</div>
+
+   {{ page.body|richtext }}
+
+
     
  
 

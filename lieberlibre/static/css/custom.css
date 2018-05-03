@@ -8,9 +8,7 @@ body {
 
 
 .navbar {
-/*
     margin-bottom: 5px;
-*/
 }
 
 
@@ -142,8 +140,9 @@ maincontent table tbody tr td .highlight {
 }
 
 img {
-
-    max-width:300px;
+	width: 40%;
+	height: auto;
+	display: block;
     background: #777;
     float: left; 
     margin: 5px;

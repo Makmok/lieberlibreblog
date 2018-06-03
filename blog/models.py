@@ -44,6 +44,7 @@ class BlogPage(Page):
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
     categories = ParentalManyToManyField('blog.BlogCategory', blank=True)
 
+
     def main_image(self):
         gallery_item = self.gallery_images.first()
         if gallery_item:

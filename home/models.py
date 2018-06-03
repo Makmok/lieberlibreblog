@@ -11,6 +11,13 @@ from wagtail.admin.edit_handlers import (
 from wagtail.contrib.forms.models import AbstractEmailForm, AbstractFormField
 from wagtail.contrib.forms.edit_handlers import FormSubmissionsPanel
 
+
+def get_context(self, request, *args, **kwargs):
+    context = super(BlogPage, self).get_context(request, *args, **kwargs)
+    context['posts'] = self.posts
+    context['blog_page'] = self
+    return context
+
 class HomePage(Page):
     body = RichTextField(blank=True)
 
